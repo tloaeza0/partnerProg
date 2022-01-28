@@ -5,15 +5,14 @@
 array1 = [1,2,3,4,5,6,7,8,9,10];
 array2= [5,10,12,3,4,8,6];
 
-    function numbers(x){      
+    function number(x){      
       let even = x.filter(num => num % 2 == 0) ;
         console.log(even);
       let odd = x.filter(num => num % 2 != 0)
         console.log(odd);
     }
-    numbers(array1);
-    numbers(array2);
-
+    number(array1);
+    number(array2);
 
 
 
@@ -100,16 +99,19 @@ const car = {
     mileage: 2000,
     color:"pink",
     driveToWork: function (){
+        
         console.log(`old mileage: ${car.mileage }`);
         car.mileage = car.mileage + 30;
         console.log(`new mileage: ${car.mileage}`);
     },
     runErrands: function (){
+    
         console.log(`old mileage: ${car.mileage}`);
         car.mileage = car.mileage + 33;
         console.log(`new mileage: ${car.mileage}`);
     },
     driveAroundWorld: function (){
+        
         console.log(`old mileage: ${car.mileage}`);
         car.mileage = car.mileage + 2400;
         console.log(`new mileage: ${car.mileage}`);
